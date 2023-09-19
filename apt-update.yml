@@ -3,3 +3,4 @@
     - name: apt update
       apt:
         update_cache: true
+      when: ansible_distribution_file_variety == "Debian"
